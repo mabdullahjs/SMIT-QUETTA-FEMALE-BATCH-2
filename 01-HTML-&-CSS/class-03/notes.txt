@@ -2,3 +2,5 @@ links hamara pass 2 types ka hota hain.
 
 relative link
 absolute link
+
+webp
