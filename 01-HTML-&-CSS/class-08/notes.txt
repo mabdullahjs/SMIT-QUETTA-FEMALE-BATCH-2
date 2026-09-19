@@ -1,0 +1,29 @@
+<h1> opening tag
+</h1> closing tag
+<br/> self closing tag
+
+
+tag === markup
+<h1>Hello world</h1> => element
+
+
+<br/>
+
+
+Attribute hamara tag ko extra information deta ha.
+
+
+ul unordered list
+ol ordered list
+dl defination list
+
+
+ul ol li
+dl dd dt
+
+
+
+core i5 6th with 128gb SSD 8GB RAM (minimum laptop requirement)
+core i5 3th with 128gb SSD 8GB RAM (minimum desktop requirement)
+
+google chromebook with windows 10

@@ -1,0 +1,21 @@
+sematic markup wo markup hota hain jo hamara page ko ya doc ko extra information deta hain.
+
+header
+main
+section
+footer
+
+
+h1 - h6 / p
+list
+table
+forms
+links
+div > span > iframe
+semantic markup
+video
+
+
+
+id unique hoti ha
+class multiple element ko aik jaisi deskta hain.

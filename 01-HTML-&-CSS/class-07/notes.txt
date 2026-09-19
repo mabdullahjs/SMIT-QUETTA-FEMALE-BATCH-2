@@ -1,0 +1,31 @@
+Hosting
+
+index.html
+
+
+heading h1
+paragraph p
+
+tag = markup
+
+
+<h1> opening tag
+</h1> closing tag
+<br/> self closing tag
+
+<h1>Hello world</h1> = element
+
+
+<h1>my heading</h1> = element
+
+
+attribute hamara tag ko extra information deta ha. ya hamesha opening tag ma ata ha
+
+
+
+LIST:
+
+ul unordered list
+ol ordered list
+dl defination list
+li list item
