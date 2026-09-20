@@ -1,0 +1,38 @@
+innovatrixtech.com
+
+/ home page ==> index.html
+/about  about page ==> about.html
+/contact  contact page ==> contact.html
+/services  services page ==> services.html
+
+
+
+link
+
+
+relative link
+absolute link
+
+
+href="" attribute
+attribute hamara tag ko extra information deta ha attribute hamesha opening tag ma ata ha
+
+
+../../../ iska matlb aik folder backward.
+
+<a href="./about.html">about</a>
+<a href="https://www.innovatrixtech.com/about">about</a>
+
+code comment
+comment ka matlb wo piece of code jo vs code ma to likha ha liken execute nahi hota.
+
+<!-- navbar started -->
+ <nav></nav>
+<!-- navbar ended -->
+
+
+id attribute hum id attribute isi liya use krta hain taaka kisi bhi tag ko unique identity milsaka
+
+
+webp
+svg
