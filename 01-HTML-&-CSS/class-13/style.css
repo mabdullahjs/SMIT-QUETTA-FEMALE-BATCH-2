@@ -1,0 +1,31 @@
+/* h1 {
+  text-align: center;
+  background-color: red;
+  color: white;
+}
+
+p {
+  color: peru;
+} */
+
+
+#head-one{
+    background-color: red;
+}
+#head-two{
+    background-color: purple;
+}
+#head-three{
+    background-color: black;
+}
+#head-four{
+    background-color: blue;
+}
+#head-five{
+    background-color: palevioletred;
+}
+
+.heading {
+    text-align: center;
+    color: white;
+}
