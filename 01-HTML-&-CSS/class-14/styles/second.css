@@ -1,0 +1,20 @@
+/* type selector > universal selector */
+/* class selector > type selector */
+/* id selector > class selector */
+/* inline styling > id selector */
+
+#head-one{
+    color: aqua;
+}
+
+.heading {
+  color: green;
+}
+
+h1 {
+  color: red !important;
+}
+
+* {
+  color: gray;
+}
