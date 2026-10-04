@@ -1,0 +1,47 @@
+/* body {
+    background-color: rgba(7,7,7,0.5);
+    color: #ffffff;
+    opacity: 1;
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+
+body {
+    font-family: "Google Sans Flex", sans-serif;
+} */
+
+
+/* 
+@font-face {
+    font-family: isometra;
+    src: url('./assets/fonts/Isometra-Regular.ttf');
+}
+
+body {
+    font-family: isometra;
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Isometra&display=swap');
+
+body {
+    font-family: "Isometra", serif;
+} */
+
+@font-face {
+    font-family: LibreCaslon;
+    src: url('./assets/fonts/LibreCaslon.ttf');
+}
+
+body {
+    font-family: LibreCaslon;
+}
+
+h1 {
+    background-color: #e1e2e2;
+}
+
+
+.p-one{
+    background-color: #2e84c5;
+}
