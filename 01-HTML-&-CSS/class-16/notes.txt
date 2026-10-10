@@ -1,0 +1,75 @@
+relative units
+%
+rem
+
+
+
+absolute units
+px
+vh
+vw
+
+
+h1 = 32px
+p = 16px
+
+
+font size ka liya rem ka use krna ha
+
+1rem == 16px
+
+
+20px
+12px
+
+
+1rem == 10px
+
+1.2rem
+2.5rem
+
+
+1rem == 16px
+16px == 100%
+10px == 62.5%
+
+
+
+fontsize = rem
+border, border radius = px
+width = %
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1-h6
+p b i br hr
+ul li nested list
+table time table
+form input (text , email , password , checkbox , radio , textarea, select option)
+div > span iframe (map , youtube)
+video tag 
+
+(nav , header , main , section , footer , )
+
+
+https://www.keybr.com/
+
+
+
+
+
+
+
+
+
