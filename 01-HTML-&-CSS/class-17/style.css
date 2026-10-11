@@ -1,0 +1,67 @@
+/* p {
+  font-weight: lighter;
+  font-style: italic;
+  text-transform: capitalize;
+  text-decoration: line-through;
+  line-height: 50px;
+  letter-spacing: 5px;
+  word-spacing: 30px;
+  text-align: justify;
+  text-indent: 50px;
+  text-shadow: 5px 2px 0px rgba(255, 0, 0, 0.6);
+} */
+
+
+/* p:first-letter {
+    color: red;
+    font-size: 4rem;
+} */
+p:first-line {
+    color: red;
+    font-size: 4rem;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+/* h1 {
+    background-color: rgb(81, 211, 255);
+    color: white;
+    cursor: pointer;
+}
+
+h1:hover {
+    background-color: rgb(10, 194, 255);;
+} */
+
+button {
+    border: none;
+    background-color: rgb(81, 211, 255);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(10, 194, 255);
+}
+
+button:active {
+    background-color: black;
+    color: white;
+
+}
+
+input:focus {
+    background-color: bisque;
+    color: black;
+}
+
+
+/* css box model */
