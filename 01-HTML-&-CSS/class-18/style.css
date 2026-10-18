@@ -21,12 +21,12 @@
     padding: 50px;
 } */
 
-
+/* 
 p {
     border: 5px double black;
-    /* border-width: 5px;
+    border-width: 5px;
     border-style: solid;
-    border-color: black; */
+    border-color: black;
     border-radius: 5px;
     padding: 10px;
     text-align: justify;
@@ -34,12 +34,50 @@ p {
 
     overflow: scroll;
 
-    /* margin-top: 50px;
+    margin-top: 50px;
     margin-left: 100px;
     margin-bottom: 150px;
-    margin-right: 110px; */
+    margin-right: 110px;
 
-    /* margin: 50px 100px 150px 200px;  clock-wise */
+    margin: 50px 100px 150px 200px;
 
-    /* padding: 40px 20px 30px; */
+    padding: 40px 20px 30px;
+} */
+
+/* 
+display
+
+none
+inline
+block
+inline-block
+
+
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
 }
+
+h1 {
+    display: block;
+    /* display: none; */
+    visibility: hidden;
+}
+
+a {
+    /* display: none; */
+    /* visibility: hidden; */
+    /* width: 150px; */
+}
+
+img {
+    width: 50px;
+}
+
+/* inline element pa width , padding top and bottom kaam nahi krti */
+/* image inline block ha. */
