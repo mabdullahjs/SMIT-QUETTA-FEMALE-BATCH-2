@@ -1,0 +1,84 @@
+/* h1 {
+    border: 1px solid black;
+    padding: 30px;
+    width: 50%;
+    text-align: center;
+    border-radius: 77% 23% 55% 45% / 25% 100% 0% 75% ;
+
+} */
+/* https://9elements.github.io/fancy-border-radius */
+
+/* 
+static
+relative
+absolute
+fixed
+sticky
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 450px;
+    height: 100vh;
+
+    border: 1px solid rebeccapurple;
+
+    margin: 0 auto;
+    margin-bottom: 300vh;
+
+
+}
+
+
+.children {
+    width: 150px;
+    height: 150px;
+
+    border: 2px solid black;
+}
+
+
+#children-1 {
+    background-color: red;
+    position: relative;
+    top: 30px;
+    left: 50px;
+
+    z-index: 1;
+}
+
+#children-2{
+    background-color: green;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#children-3{
+    background-color: blue;
+
+    position: fixed;
+    top: 10px;
+}
+
+#children-4{
+    background-color: transparent;
+
+    position: sticky;
+    top: 100px;
+}
+
+
+
+/* float */
+/* flexbox */
+/* grid */
+
+
+
+/* HTML canvas */
