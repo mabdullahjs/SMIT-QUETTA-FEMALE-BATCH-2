@@ -15,11 +15,18 @@
     column-gap: 20px;
     row-gap: 10px;
 
-    align-items: center;
-    align-content: center;
+    /* align-items: center;
+    align-content: center; */
 }
 
 .children {
     border: 1px solid red;
     padding: 10px;
 }
+
+#box-2  {
+    /* flex-grow: 1; */
+    flex-basis: 150px;
+    align-self: center;
+}
+
