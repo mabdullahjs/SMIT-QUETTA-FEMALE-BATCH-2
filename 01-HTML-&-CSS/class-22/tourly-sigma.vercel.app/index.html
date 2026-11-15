@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from https://tourly-sigma.vercel.app/index.html by HTTrack Website Copier/3.x [XR&CO], Sat, 07 Nov 2026 10:10:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tourly - Tour & Travel Booking HTML Template">
+
+    <!-- Title & Favicon -->
+    <title>Air Ticket Booking | Tourly - Tour & Travel Booking HTML Template</title>
+    <link rel="shortcut icon" href="assets/favicon-CkRwJBWz.ico" type="image/x-icon">
+  <script type="module" crossorigin src="assets/main-DFIDqRNq.js"></script>
+  <link rel="stylesheet" crossorigin href="assets/main-C1kenaJz.css">
+</head>
+
+<body>
+    <!-- ====== Preloader ====== -->
+    <div class="preloader" id="preloader">
+        <div class="spinner-grow" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <!-- ====== Popup Video Container ====== -->
+    <div id="videoPopup" class="video-popup-iframe">
+        <div class="video-content">
+            <span class="close-btn" id="videoCloseButton"><i class="ti ti-x"></i></span>
+            <div class="ratio ratio-16x9">
+                <iframe id="videoFrame" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== Right Side Offcanvas ====== -->
+    <div class="offcanvas offcanvas-end right-side-tourly-offcanvas shadow-lg" tabindex="-1" id="sideMenuOffcanvas">
+        <!-- Offcanvas Header -->
+        <div class="offcanvas-header">
+            <div>
+                <img src="./assets/logo-image/innovatrix-logo.png" alt="">
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <!-- Offcanvas Body -->
+        <div class="offcanvas-body">
+            <div class="container-fluid">
+                <div class="d-flex flex-column gap-5 mb-5">
+                    <!-- Single Item -->
+                    <div class="about-card-sm  d-flex align-items-center gap-3">
+                        <div class="icon">
+                            <i class="ti ti-shield-half"></i>
+                        </div>
+                        <div>
+                            <h4>Safety First Always</h4>
+                            <p class="mb-0">We believe in the power of travel As avid explorer.</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Item -->
+                    <div class="about-card-sm  d-flex align-items-center gap-3">
+                        <div class="icon">
+                            <i class="ti ti-world-star"></i>
+                        </div>
+                        <div>
+                            <h4>Experience the World</h4>
+                            <p class="mb-0">We believe in the power of travel As avid explorer.</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Item -->
+                    <div class="about-card-sm  d-flex align-items-center gap-3">
+                        <div class="icon">
+                            <i class="ti ti-capture"></i>
+                        </div>
+                        <div>
+                            <h4>Excellence in Service</h4>
+                            <p class="mb-0">We believe in the power of travel As avid explorer.</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Item -->
+                    <div class="about-card-sm  d-flex align-items-center gap-3">
+                        <div class="icon">
+                            <i class="ti ti-user"></i>
+                        </div>
+                        <div>
+                            <h4>Friendly Guider</h4>
+                            <p class="mb-0">We believe in the power of travel As avid explorer.</p>
+                        </div>
+                    </div>
+
+                    <a href="about-us.html" class="btn btn-primary">Book Now <i class="icon-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== Search Form Overlay ====== -->
+    <div class="search-bg-overlay" id="searchOverlay"></div>
+
+    <!-- ====== Search Form Popup ====== -->
+    <div class="search-form-popup">
+        <h2 class="mb-5 display-6 fw-bold text-white">How can I help you, Today?</h2>
+        <button type="button" class="close-btn" id="searchClose" aria-label="Close">
+            <i class="ti ti-x"></i>
+        </button>
+        <form class="search-form">
+            <input type="search" class="form-control" placeholder="Search...">
+            <button type="submit" class="btn btn-primary d-none"><i class="ti ti-search"></i></button>
+        </form>
+    </div>
+
+    <!-- ====== Header Area ====== -->
+    <header class="header-area style-five">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-xl px-3 px-lg-4 px-xxl-5">
+            <!-- Navbar Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/logo-image/innovatrix-logo.png" alt="">
+            </a>
+
+            <!-- Navbar Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#touriaNav"
+                aria-controls="touriaNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="ti ti-menu-deep"></i>
+            </button>
+
+            <!-- home about us contact testimonials gallery -->
+
+            <!-- Navbar Nav -->
+            <div class="collapse navbar-collapse justify-content-end" id="touriaNav">
+                <ul class="navbar-nav align-items-xl-center navbar-nav-scroll">
+                    <li class="tourly-dd">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="tourly-dd">
+                        <a href="./about-us.html">About Us</a>
+                    </li>
+                    <li class="tourly-dd">
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                    <li class="tourly-dd">
+                        <a href="./testimonial.html">Testimonials</a>
+                    </li>
+                    <li class="tourly-dd">
+                        <a href="./gallery.html">Gallery</a>
+                    </li>
+                </ul>
+
+                <!-- Header Navigation -->
+                <div class="header-navigation d-flex flex-wrap align-items-center gap-3 mt-4 mt-xl-0">
+                    <!-- Search Button -->
+                    <div class="header-search-btn" id="searchButton">
+                        <button class="btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M12.0772 12.0987L14.6438 14.6654M13.833 7.58203C13.833 9.23963 13.1745 10.8293 12.0024 12.0014C10.8303 13.1736 9.24061 13.832 7.58301 13.832C5.9254 13.832 4.33569 13.1736 3.16359 12.0014C1.99149 10.8293 1.33301 9.23963 1.33301 7.58203C1.33301 5.92443 1.99149 4.33472 3.16359 3.16261C4.33569 1.99051 5.9254 1.33203 7.58301 1.33203C9.24061 1.33203 10.8303 1.99051 12.0024 3.16261C13.1745 4.33472 13.833 5.92443 13.833 7.58203Z"
+                                    stroke="#1C3637" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Offcanvas Icon -->
+                    <div class="offcanvas-icon" data-bs-toggle="offcanvas" data-bs-target="#sideMenuOffcanvas"
+                        aria-controls="sideMenuOffcanvas">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="18" viewBox="0 0 26 18" fill="none">
+                            <path
+                                d="M19.5 1.28571C19.5 0.575658 18.9179 0 18.2 0H1.3C0.582056 0 0 0.575658 0 1.28571C0 1.99577 0.582056 2.57143 1.3 2.57143H18.2C18.9179 2.57143 19.5 1.99572 19.5 1.28571ZM1.3 7.71428H24.7C25.4179 7.71428 26 8.28999 26 9C26 9.71006 25.4179 10.2857 24.7 10.2857H1.3C0.582056 10.2857 0 9.71006 0 9C0 8.28999 0.582056 7.71428 1.3 7.71428ZM1.3 15.4286H13C13.7179 15.4286 14.3 16.0042 14.3 16.7143C14.3 17.4243 13.7179 18 13 18H1.3C0.582056 18 0 17.4243 0 16.7143C0 16.0042 0.582056 15.4286 1.3 15.4286Z"
+                                fill="#161920" />
+                        </svg>
+                    </div>
+
+                    <!-- Get A Quote -->
+                    <a class="btn btn-warning" href="contact.html">Get a Quote <i class="icon-arrow-right"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ====== Smooth Wrapper ====== -->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <!-- ====== Hero Section ====== -->
+            <section class="hero-section bg-img style-five jarallax"
+                style="background-image: url('assets/227-CV0XzQD3.jpg');">
+
+                <div class="container">
+                    <div class="row g-xl-5 justify-content-center">
+                        <div class="col-12 col-md-8">
+                            <!-- Hero Content -->
+                            <div class="hero-content home-one text-center">
+                                <h2 class="text-white mb-4 heading-line" data-delay="0.6">Enjoy Your Trip With Tureezai
+                                    Now.</h2>
+                                <p class="text-white heading-line mb-5" data-delay="0.7">Our travels are different from
+                                    all the others! We love our business and want to see happy customers, so we always
+                                    do our best for your comfort!</p>
+                                <a href="#" class="btn btn-warning">Contact Us <i class="icon-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="hero-img">
+                    <img src="assets/cloud-CVaFs_LA.png" alt="">
+                </div>
+
+                <!-- Plane Image -->
+                <div class="plane-img" data-speed="0.9">
+                    <div class="container">
+                        <img src="assets/plane4-Duq1Hrw6.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!-- ====== Premier Destination Section ====== -->
+            <section class="premier-destination-section">
+                <!-- Divider -->
+                <div class="divider"></div>
+
+                <div class="container">
+                    <div class="row g-4 g-md-5 align-items-end">
+                        <div class="col-12 col-sm-6">
+                            <!-- Section Heading -->
+                            <div class="section-heading">
+                                <span class="sub-title text-primary">Popular Destination</span>
+                                <h2 class="mb-0">Premier Destinations</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6">
+                            <div class="premier-destination-navigation justify-content-sm-end">
+                                <div class="premier-destination-button-prev">
+                                    <i class="icon-arrow-left"></i>
+                                </div>
+                                <div class="premier-destination-button-next">
+                                    <i class="icon-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider-sm"></div>
+
+                    <!-- Premier Destination Swiper -->
+                    <div class="swiper premier-destination-swiper" id="premierDestinationSwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Project Card -->
+                            <div class="swiper-slide premier-destination-card slide-expand"
+                                style="background-image: url('assets/228-CQPINnYq.jpg');">
+                                <!-- Project Content -->
+                                <div class="premier-destination-content">
+                                    <p class="mb-2 text-white"><i class="ti ti-map-pin-filled"></i> 371 7th Ave, New
+                                        York, NY
+                                        10001</p>
+                                    <h3 class="text-white">Zurich, Switzerland Tour</h3>
+                                    <p class="text-white">$700.00 USD</p>
+                                    <a href="#" class="btn btn-sm btn-primary">Add to cart <i
+                                            class="icon-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- Project Card -->
+                            <div class="swiper-slide premier-destination-card"
+                                style="background-image: url('assets/229-CszkS-vJ.jpg');">
+                                <!-- Project Content -->
+                                <div class="premier-destination-content">
+                                    <p class="mb-2 text-white"><i class="ti ti-map-pin-filled"></i> 371 7th Ave, New
+                                        York, NY
+                                        10001</p>
+                                    <h3 class="text-white">Turkey, Istanbul</h3>
+                                    <p class="text-white">$500.00 USD</p>
+                                    <a href="#" class="btn btn-sm btn-primary">Add to cart <i
+                                            class="icon-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- Project Card -->
+                            <div class="swiper-slide premier-destination-card"
+                                style="background-image: url('assets/230-DQ5RgE4l.jpg');">
+                                <!-- Project Content -->
+                                <div class="premier-destination-content">
+                                    <p class="mb-2 text-white"><i class="ti ti-map-pin-filled"></i> 371 7th Ave, New
+                                        York, NY
+                                        10001</p>
+                                    <h3 class="text-white">Zurich, Switzerland Tour</h3>
+                                    <p class="text-white">$799.00 USD</p>
+                                    <a href="#" class="btn btn-sm btn-primary">Add to cart <i
+                                            class="icon-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- Project Card -->
+                            <div class="swiper-slide premier-destination-card"
+                                style="background-image: url('assets/231-PVb-v6If.jpg');">
+                                <!-- Project Content -->
+                                <div class="premier-destination-content">
+                                    <p class="mb-2 text-white"><i class="ti ti-map-pin-filled"></i> 371 7th Ave, New
+                                        York, NY
+                                        10001</p>
+                                    <h3 class="text-white">Turkey, Istanbul</h3>
+                                    <p class="text-white">$399.00 USD</p>
+                                    <a href="#" class="btn btn-sm btn-primary">Add to cart <i
+                                            class="icon-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="divider"></div>
+            </section>
+
+            <!-- ====== Top Tour Catagory Section ====== -->
+            <section class="top-tour-catagory-section bg-img bg-secondary"
+                style="background-image: url('assets/shape14-Be00QJXJ.png');">
+                <!-- Divider -->
+                <div class="divider"></div>
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-8">
+                            <!-- Section Heading -->
+                            <div class="section-heading text-center">
+                                <span class="sub-title">Tour Categories</span>
+                                <h2 class="mb-0">Top Tour Categories</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider-sm"></div>
+
+                    <div class="container">
+                        <div class="swiper top-tour-catagory-swiper" id="topTourCatagorySwiper">
+                            <div class="swiper-wrapper">
+                                <!-- Single Catagory -->
+                                <div class="swiper-slide">
+                                    <div class="tour-catagory-card">
+                                        <!-- Tour Image -->
+                                        <div class="tour-catagory-img">
+                                            <div class="row g-4 g-xxl-5 align-items-center">
+                                                <div class="col-12 col-sm-4 col-md-3">
+                                                    <div class="d-flex flex-column align-items-end gap-4 text-end">
+                                                        <div class="badge">06 Days Trip</div>
+                                                        <div class="badge">Bachelor Trip</div>
+                                                        <div class="badge">Top Tours</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-6">
+                                                    <img src="assets/232-DFieq-hX.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-3">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="badge">From $600.00</div>
+                                                        <div class="badge">Rating 4.0 <i class="ti ti-star-filled"></i>
+                                                        </div>
+                                                        <div class="badge">Trending Tours</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Tour Content -->
+                                        <div class="tour-catagory-content text-center mt-5">
+                                            <div class="row justify-content-center">
+                                                <div class="col-12 col-lg-6">
+                                                    <div
+                                                        class="tour-catagory-navigation d-flex align-items-center justify-content-center mb-4">
+                                                        <div class="tour-catagory-button-prev">
+                                                            <i class="icon-arrow-left"></i>
+                                                        </div>
+                                                        <h2 class="mb-0"><i class="ti ti-map-pin-filled"></i> Asia
+                                                        </h2>
+                                                        <div class="tour-catagory-button-next">
+                                                            <i class="icon-arrow-right"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="mb-5">Our journeys stand apart from the rest. We're
+                                                        passionate about what we do and
+                                                        committed to delivering the best experience—because your comfort
+                                                        and
+                                                        happiness are
+                                                        our top priorities.</p>
+                                                    <a href="#" class="btn btn-primary">Read More <i
+                                                            class="icon-arrow-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Catagory -->
+                                <div class="swiper-slide">
+                                    <div class="tour-catagory-card">
+                                        <!-- Tour Image -->
+                                        <div class="tour-catagory-img">
+                                            <div class="row g-4 g-xxl-5 align-items-center">
+                                                <div class="col-12 col-sm-4 col-md-3">
+                                                    <div class="d-flex flex-column align-items-end gap-4 text-end">
+                                                        <div class="badge">06 Days Trip</div>
+                                                        <div class="badge">Bachelor Trip</div>
+                                                        <div class="badge">Top Tours</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-6">
+                                                    <img src="assets/232-DFieq-hX.jpg" alt="">
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-3">
+                                                    <div class="d-flex flex-column gap-4">
+                                                        <div class="badge">From $600.00</div>
+                                                        <div class="badge">Rating 4.0 <i class="ti ti-star-filled"></i>
+                                                        </div>
+                                                        <div class="badge">Trending Tours</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Tour Content -->
+                                        <div class="tour-catagory-content text-center mt-5">
+                                            <div class="row justify-content-center">
+                                                <div class="col-12 col-lg-6">
+                                                    <div
+                                                        class="tour-catagory-navigation d-flex align-items-center justify-content-center mb-4">
+                                                        <div class="tour-catagory-button-prev">
+                                                            <i class="icon-arrow-left"></i>
+                                                        </div>
+                                                        <h2 class="mb-0"><i class="ti ti-map-pin-filled"></i> Europe
+                                                        </h2>
+                                                        <div class="tour-catagory-button-next">
+                                                            <i class="icon-arrow-right"></i>
+                                                        </div>
+                                                    </div>
+                                                    <p class="mb-5">Our journeys stand apart from the rest. We're
+                                                        passionate about what we do and
+                                                        committed to delivering the best experience—because your comfort
+                                                        and
+                                                        happiness are
+                                                        our top priorities.</p>
+                                                    <a href="#" class="btn btn-primary">Read More <i
+                                                            class="icon-arrow-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="divider"></div>
+            </section>
+
+            <!-- ====== About Company Section ====== -->
+            <section class="about-company-section style-two">
+                <!-- Divider -->
+                <div class="divider"></div>
+                <div class="divider-sm"></div>
+
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <!-- About Content -->
+                        <div class="col-12 col-lg-6">
+                            <div class="about-content pe-md-5">
+                                <div class="section-heading">
+                                    <span class="sub-title">About Company</span>
+                                    <h2 class="mb-4">Travel Experts Crafting Unique Experiences</h2>
+                                    <p class="mb-5">Step into a world of unforgettable adventures with Travlo. Whether
+                                        you're seeking serene beaches, vibrant cities, or hidden gems, we make every
+                                        journey seamless and extraordinary. Your dream dream destination is just a click
+                                        away!</p>
+                                </div>
+                                <div class="d-flex flex-column flex-sm-row gap-4 mb-5">
+                                    <!-- Single Item -->
+                                    <div class="about-card-sm align-items-baseline d-flex gap-3">
+                                        <div class="check-icon flex-shrink-0">
+                                            <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M22.5546 14.4278C22.0579 13.6552 21.5615 12.9102 21.0648 12.1379C20.9547 11.9725 20.9547 11.8621 21.0648 11.6966C21.5615 10.9518 22.0304 10.2068 22.5271 9.46205C23.1064 8.57935 22.803 7.72394 21.8096 7.36545C20.9822 7.06204 20.1546 6.73109 19.327 6.42768C19.1615 6.37235 19.0786 6.26195 19.0786 6.06894C19.0511 5.1587 18.996 4.24821 18.9407 3.36551C18.8856 2.39995 18.1409 1.8482 17.2028 2.09654C16.3201 2.31709 15.4374 2.56542 14.582 2.81376C14.389 2.86884 14.2789 2.81376 14.1407 2.67582C13.5889 1.95835 13.0096 1.26891 12.4581 0.579224C11.8511 -0.193075 10.913 -0.193075 10.2787 0.579224C9.72693 1.26891 9.14764 1.9586 8.62343 2.64829C8.48549 2.8413 8.34756 2.86884 8.12701 2.81376C7.27185 2.56542 6.41668 2.34488 5.80961 2.17915C4.62349 1.90327 3.90627 2.37241 3.85094 3.36551C3.79587 4.27575 3.7408 5.18624 3.71301 6.12426C3.71301 6.31728 3.63039 6.39989 3.46492 6.48275L0.899433 7.47585C0.0164811 7.83459 -0.259394 8.68975 0.264819 9.48959C0.761495 10.2621 1.25792 11.0069 1.7546 11.7792C1.86474 11.9449 1.86474 12.0551 1.7546 12.2483C1.23287 13.0195 0.726989 13.8012 0.237282 14.593C-0.231604 15.338 0.0718075 16.2207 0.89918 16.5517C1.7546 16.8826 2.63729 17.2136 3.49246 17.5448C3.68547 17.6001 3.74079 17.7103 3.74079 17.9035C3.76833 18.7862 3.87873 19.6416 3.87873 20.5241C3.87873 21.407 4.65103 22.2069 5.72699 21.8759C6.58216 21.6 7.43732 21.407 8.29248 21.1584C8.45796 21.1034 8.56836 21.1312 8.67876 21.2966C9.25804 22.0139 9.8098 22.7035 10.3891 23.4208C11.0234 24.1931 11.9339 24.1931 12.5408 23.4208C13.12 22.7033 13.6718 22.0136 14.2511 21.2966C14.3615 21.1587 14.4441 21.1034 14.6374 21.1587C15.5201 21.407 16.4028 21.6276 17.2857 21.8759C18.1959 22.1243 18.9682 21.5725 18.996 20.6345C19.0511 19.7242 19.1062 18.8138 19.134 17.8757C19.134 17.6552 19.2441 17.5726 19.4098 17.5172C20.2511 17.2074 21.0879 16.8855 21.92 16.5517C22.803 16.1103 23.0788 15.2279 22.5546 14.4278ZM15.9614 9.90315L10.4442 15.4206C10.3062 15.5583 10.1132 15.6687 9.91994 15.6963C9.86487 15.6963 9.78201 15.7241 9.72693 15.7241C9.47859 15.7241 9.20272 15.6137 9.00971 15.4204L6.74763 13.1583C6.56206 12.9712 6.45793 12.7184 6.45793 12.4549C6.45793 12.1913 6.56206 11.9385 6.74763 11.7514C6.93472 11.5658 7.18757 11.4617 7.45109 11.4617C7.71461 11.4617 7.96745 11.5658 8.15454 11.7514L9.69939 13.2963L14.4994 8.49623C14.6865 8.31066 14.9394 8.20653 15.2029 8.20653C15.4664 8.20653 15.7192 8.31066 15.9063 8.49623C16.3477 8.88251 16.3477 9.51662 15.9614 9.90315Z"
+                                                    fill="#000000" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h3 class="h4">Our Mission</h3>
+                                            <p class="mb-0">Step into a world unforgettable adventures with Travlo.</p>
+                                        </div>
+                                    </div>
+                                    <!-- Single Item -->
+                                    <div class="about-card-sm align-items-baseline d-flex gap-3">
+                                        <div class="check-icon flex-shrink-0">
+                                            <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M22.5546 14.4278C22.0579 13.6552 21.5615 12.9102 21.0648 12.1379C20.9547 11.9725 20.9547 11.8621 21.0648 11.6966C21.5615 10.9518 22.0304 10.2068 22.5271 9.46205C23.1064 8.57935 22.803 7.72394 21.8096 7.36545C20.9822 7.06204 20.1546 6.73109 19.327 6.42768C19.1615 6.37235 19.0786 6.26195 19.0786 6.06894C19.0511 5.1587 18.996 4.24821 18.9407 3.36551C18.8856 2.39995 18.1409 1.8482 17.2028 2.09654C16.3201 2.31709 15.4374 2.56542 14.582 2.81376C14.389 2.86884 14.2789 2.81376 14.1407 2.67582C13.5889 1.95835 13.0096 1.26891 12.4581 0.579224C11.8511 -0.193075 10.913 -0.193075 10.2787 0.579224C9.72693 1.26891 9.14764 1.9586 8.62343 2.64829C8.48549 2.8413 8.34756 2.86884 8.12701 2.81376C7.27185 2.56542 6.41668 2.34488 5.80961 2.17915C4.62349 1.90327 3.90627 2.37241 3.85094 3.36551C3.79587 4.27575 3.7408 5.18624 3.71301 6.12426C3.71301 6.31728 3.63039 6.39989 3.46492 6.48275L0.899433 7.47585C0.0164811 7.83459 -0.259394 8.68975 0.264819 9.48959C0.761495 10.2621 1.25792 11.0069 1.7546 11.7792C1.86474 11.9449 1.86474 12.0551 1.7546 12.2483C1.23287 13.0195 0.726989 13.8012 0.237282 14.593C-0.231604 15.338 0.0718075 16.2207 0.89918 16.5517C1.7546 16.8826 2.63729 17.2136 3.49246 17.5448C3.68547 17.6001 3.74079 17.7103 3.74079 17.9035C3.76833 18.7862 3.87873 19.6416 3.87873 20.5241C3.87873 21.407 4.65103 22.2069 5.72699 21.8759C6.58216 21.6 7.43732 21.407 8.29248 21.1584C8.45796 21.1034 8.56836 21.1312 8.67876 21.2966C9.25804 22.0139 9.8098 22.7035 10.3891 23.4208C11.0234 24.1931 11.9339 24.1931 12.5408 23.4208C13.12 22.7033 13.6718 22.0136 14.2511 21.2966C14.3615 21.1587 14.4441 21.1034 14.6374 21.1587C15.5201 21.407 16.4028 21.6276 17.2857 21.8759C18.1959 22.1243 18.9682 21.5725 18.996 20.6345C19.0511 19.7242 19.1062 18.8138 19.134 17.8757C19.134 17.6552 19.2441 17.5726 19.4098 17.5172C20.2511 17.2074 21.0879 16.8855 21.92 16.5517C22.803 16.1103 23.0788 15.2279 22.5546 14.4278ZM15.9614 9.90315L10.4442 15.4206C10.3062 15.5583 10.1132 15.6687 9.91994 15.6963C9.86487 15.6963 9.78201 15.7241 9.72693 15.7241C9.47859 15.7241 9.20272 15.6137 9.00971 15.4204L6.74763 13.1583C6.56206 12.9712 6.45793 12.7184 6.45793 12.4549C6.45793 12.1913 6.56206 11.9385 6.74763 11.7514C6.93472 11.5658 7.18757 11.4617 7.45109 11.4617C7.71461 11.4617 7.96745 11.5658 8.15454 11.7514L9.69939 13.2963L14.4994 8.49623C14.6865 8.31066 14.9394 8.20653 15.2029 8.20653C15.4664 8.20653 15.7192 8.31066 15.9063 8.49623C16.3477 8.88251 16.3477 9.51662 15.9614 9.90315Z"
+                                                    fill="#000000" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h3 class="h4">Our Vision</h3>
+                                            <p class="mb-0">Step into a world unforgettable adventures with Travlo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Button -->
+                                <a href="about-us.html" class="btn btn-primary">More About Us <i
+                                        class="icon-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- About Thumbnail -->
+                        <div class="col-12 col-lg-6">
+                            <div class="about-thumbnail half-img-wrapper">
+                                <img class="half-img" src="assets/233-BQLD5o9y.png" alt="">
+                                <img class="half-img" src="assets/234-Bk4gFPAg.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="divider"></div>
+                <div class="divider-sm"></div>
+            </section>
+
+            <!-- ====== Deals Section ====== -->
+            <section class="deals-section bg-dark">
+                <!-- Countdown Timer -->
+                <div class="countdown-timer">
+                    <img class="fadeInUp" data-delay="0.3" src="assets/50-off-chfDK6jI.png" alt="">
+
+                    <!-- Countdown Clock -->
+                    <ul class="list-unstyled flex-wrap justify-content-center fadeInUp" data-delay="0.5"
+                        id="countdownClock" data-target-date="2028-10-31" data-target-time="23:59:59">
+                        <li><span id="days">00</span><span>Days</span></li>
+                        <li><span id="hours">00</span><span>Hours</span></li>
+                        <li><span id="minutes">00</span><span>Mins</span></li>
+                        <li><span id="seconds">00</span><span>Seconds</span></li>
+                    </ul>
+                </div>
+
+                <!-- Deals Content -->
+                <div class="deals-content">
+                    <!-- Divider -->
+                    <div class="divider"></div>
+
+                    <!-- Section Heading -->
+                    <div class="d-flex flex-wrap justify-content-between gap-5 align-items-center">
+                        <div class="section-heading">
+                            <span class="sub-title text-white">Deals &amp; Offers</span>
+                            <h2 class="mb-0 text-white">Last-Minute Deals</h2>
+                        </div>
+
+                        <div class="deals-navigation-container">
+                            <div class="deals-button-prev">
+                                <i class="icon-arrow-left"></i>
+                            </div>
+                            <div class="deals-button-next">
+                                <i class="icon-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider-sm"></div>
+
+                    <!-- Deals Slider -->
+                    <div class="swiper deals-swiper">
+                        <div class="swiper-wrapper">
+
+                            <!-- Single Slide -->
+                            <div class="swiper-slide">
+                                <div class="deals-slide">
+                                    <img src="assets/16-BcGyq27i.jpg" alt="">
+
+                                    <!-- Deals Content -->
+                                    <div class="d-flex flex-wrap mt-3 gap-3 justify-content-between align-items-center">
+                                        <div>
+                                            <p class="mb-1 h4">Nepal City</p>
+                                            <p class="mb-0">$160</p>
+                                        </div>
+                                        <span class="badge bg-primary"><i class="ti ti-star"></i> 4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Slide -->
+                            <div class="swiper-slide">
+                                <div class="deals-slide">
+                                    <img src="assets/17-B0KjAa5A.jpg" alt="">
+
+                                    <!-- Deals Content -->
+                                    <div class="d-flex flex-wrap mt-3 gap-3 justify-content-between align-items-center">
+                                        <div>
+                                            <p class="mb-1 h4">Dhaka City</p>
+                                            <p class="mb-0">$160</p>
+                                        </div>
+                                        <span class="badge bg-primary"><i class="ti ti-star"></i> 4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Slide -->
+                            <div class="swiper-slide">
+                                <div class="deals-slide">
+                                    <img src="assets/18-DRTqUw_Z.jpg" alt="">
+
+                                    <!-- Deals Content -->
+                                    <div class="d-flex flex-wrap mt-3 gap-3 justify-content-between align-items-center">
+                                        <div>
+                                            <p class="mb-1 h4">Sylhet City</p>
+                                            <p class="mb-0">$160</p>
+                                        </div>
+                                        <span class="badge bg-primary"><i class="ti ti-star"></i> 4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Slide -->
+                            <div class="swiper-slide">
+                                <div class="deals-slide">
+                                    <img src="assets/19-CmYBBpED.jpg" alt="">
+
+                                    <!-- Deals Content -->
+                                    <div class="d-flex flex-wrap mt-3 gap-3 justify-content-between align-items-center">
+                                        <div>
+                                            <p class="mb-1 h4">Cox's Bazar City</p>
+                                            <p class="mb-0">$160</p>
+                                        </div>
+                                        <span class="badge bg-primary"><i class="ti ti-star"></i> 4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Slide -->
+                            <div class="swiper-slide">
+                                <div class="deals-slide">
+                                    <img src="assets/16-BcGyq27i.jpg" alt="">
+
+                                    <!-- Deals Content -->
+                                    <div class="d-flex flex-wrap mt-3 gap-3 justify-content-between align-items-center">
+                                        <div>
+                                            <p class="mb-1 h4">Paro City</p>
+                                            <p class="mb-0">$160</p>
+                                        </div>
+                                        <span class="badge bg-primary"><i class="ti ti-star"></i> 4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Slide -->
+                            <div class="swiper-slide">
+                                <div class="deals-slide">
+                                    <img src="assets/17-B0KjAa5A.jpg" alt="">
+
+                                    <!-- Deals Content -->
+                                    <div class="d-flex flex-wrap mt-3 gap-3 justify-content-between align-items-center">
+                                        <div>
+                                            <p class="mb-1 h4">Galle City</p>
+                                            <p class="mb-0">$160</p>
+                                        </div>
+                                        <span class="badge bg-primary"><i class="ti ti-star"></i> 4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Slide -->
+                            <div class="swiper-slide">
+                                <div class="deals-slide">
+                                    <img src="assets/18-DRTqUw_Z.jpg" alt="">
+
+                                    <!-- Deals Content -->
+                                    <div class="d-flex flex-wrap mt-3 gap-3 justify-content-between align-items-center">
+                                        <div>
+                                            <p class="mb-1 h4">Mumbai City</p>
+                                            <p class="mb-0">$160</p>
+                                        </div>
+                                        <span class="badge bg-primary"><i class="ti ti-star"></i> 4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single Slide -->
+                            <div class="swiper-slide">
+                                <div class="deals-slide">
+                                    <img src="assets/19-CmYBBpED.jpg" alt="">
+
+                                    <!-- Deals Content -->
+                                    <div class="d-flex flex-wrap mt-3 gap-3 justify-content-between align-items-center">
+                                        <div>
+                                            <p class="mb-1 h4">Pune City</p>
+                                            <p class="mb-0">$160</p>
+                                        </div>
+                                        <span class="badge bg-primary"><i class="ti ti-star"></i> 4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="divider"></div>
+                </div>
+            </section>
+
+            <!-- ====== Tour Package Section ====== -->
+            <section class="tour-package-section tourly-container">
+                <!-- Divider -->
+                <div class="divider"></div>
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-8">
+                            <!-- Section Heading -->
+                            <div class="section-heading text-center">
+                                <span class="sub-title">Explore The World</span>
+                                <h2 class="mb-0">World's Amazing Tour Package</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="divider-sm"></div>
+
+                <div class="container">
+                    <div class="text-center">
+                        <!-- Destination Navigation -->
+                        <div class="nav fadeInUp tourly-filter-nav bg-secondary">
+                            <button class="nav-link bg-white active" data-filter="*">All</button>
+                            <button class="nav-link bg-white" data-filter=".thailand">Thailand</button>
+                            <button class="nav-link bg-white" data-filter=".manhattan">Manhattan</button>
+                            <button class="nav-link bg-white" data-filter=".pearland">Pearland</button>
+                            <button class="nav-link bg-white" data-filter=".maldives">Maldives</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="divider-sm"></div>
+
+                <div class="container">
+                    <div class="tourly-filter-grid-sizer">
+                        <div class="grid-sizer"></div>
+
+                        <div class="item-grid-sizer medium thailand">
+                            <div class="tour-package-card">
+                                <img src="assets/235-DkUWdu6L.jpg" alt="">
+                                <div class="tour-package-content">
+                                    <h2 class="mb-3 text-white">Lake Tahoe Kayak Tour</h2>
+                                    <h3 class="text-white h6">Adventures in Japan</h3>
+                                    <p class="mb-0 text-white">Our journeys stand apart from the rest. We're passionate
+                                        about what we do and committed to delivering the best experience.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-grid-sizer small manhattan">
+                            <div class="tour-package-card small-package">
+                                <img src="assets/236-B9aQq-k9.jpg" alt="">
+                                <div class="tour-package-content">
+                                    <h2 class="mb-3 text-white">Lake Tahoe Kayak Tour</h2>
+                                    <h3 class="text-white h6">Adventures in Japan</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-grid-sizer small pearland">
+                            <div class="tour-package-card small-package">
+                                <img src="assets/237-A0CQWkUC.jpg" alt="">
+                                <div class="tour-package-content">
+                                    <h2 class="mb-3 text-white">Lake Tahoe Kayak Tour</h2>
+                                    <h3 class="text-white h6">Adventures in Japan</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-grid-sizer small maldives">
+                            <div class="tour-package-card small-package">
+                                <img src="assets/238-DRXSodc4.jpg" alt="">
+                                <div class="tour-package-content">
+                                    <h2 class="mb-3 text-white">Lake Tahoe Kayak Tour</h2>
+                                    <h3 class="text-white h6">Adventures in Japan</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-grid-sizer small maldives">
+                            <div class="tour-package-card small-package">
+                                <img src="assets/239-xiRwmPPI.jpg" alt="">
+                                <div class="tour-package-content">
+                                    <h2 class="mb-3 text-white">Lake Tahoe Kayak Tour</h2>
+                                    <h3 class="text-white h6">Adventures in Japan</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="divider"></div>
+            </section>
+
+            <!-- ====== Testimonial Section ====== -->
+            <section class="testimonial-section bg-secondary bg-img"
+                style="background-image: url('assets/shape15-MZdB0lLQ.png');">
+                <!-- Divider -->
+                <div class="divider"></div>
+
+                <div class="container">
+                    <div class="row g-5">
+                        <div class="col-12 col-md-5 col-lg-6">
+                            <div class="section-heading">
+                                <span class="sub-title">Testimonial</span>
+                                <h2 class="mb-4">What they're talking about Us</h2>
+                                <p class="mb-5">Step into a world of unforgettable adventures with. seeking serene
+                                    beaches, vibrant cities, or hidden gems, we make every journey seamless and
+                                    extraordinary.</p>
+                                <a href="#" class="btn btn-primary">Discover More <i class="ti ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-7 col-lg-6">
+                            <div class="d-flex flex-column gap-4">
+                                <!-- Testimonial Card -->
+                                <div class="testimonial-card-four">
+                                    <div class="ratings mb-3">
+                                        <i class="ti ti-star-filled"></i>
+                                        <i class="ti ti-star-filled"></i>
+                                        <i class="ti ti-star-filled"></i>
+                                        <i class="ti ti-star-filled"></i>
+                                        <i class="ti ti-star-filled"></i>
+                                    </div>
+                                    <p class="testimonial-text">
+                                        “Targeting consultation discover apart ndulgence of under folly death wrote
+                                        cause her yet a spite. upon yet way a hearts. Resolve a ndulgence hearts cause
+                                        practasing. Almost ndulgence hearts”
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-between gap-4 flex-wrap">
+                                        <div class="testimonial-info-content d-flex align-items-center gap-3">
+                                            <img class="rounded-circle flex-shrink-0" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIAFAAUAMBIgACEQEDEQH/xAAdAAABBAMBAQAAAAAAAAAAAAAHBAUGCAADCQEC/9oACAEBAAAAAL/Yhr7WqeWIKqzMCEOpgXJCvtQyFZoFDIJmpxl5pFVlhgl0Bsc+ESPkMispLRMlW5GRUG5++imjZgixzQ1iiZLJcghP2NwXqsiflsVG0RIrfy+ZnjrsTxgHPDJTam6e8vQPMFTes5eyy7Nls//EABoBAAIDAQEAAAAAAAAAAAAAAAMFAAEEBgL/2gAIAQIQAAAAq87fDWVM2Ye8fNP9pCc+9sZJA//EABoBAAEFAQAAAAAAAAAAAAAAAAUAAQMEBgL/2gAIAQMQAAAAZ7gW4xHS5cX1e3OKFysfBxSJN3//xAAmEAABBQACAQQCAwEAAAAAAAAEAQIDBQYHEQAIEhMhEBQVIkEj/9oACAEBAAEMAPwdaxCxPWJiSP5S5tAxzWAzlETWhXqb3nzdg01QOJmucaC3UdLZZqM6g0d3EdGNMdJNCHcwl+6J6fFJ+dxyhKFZTUlVXTSBz8kCi1FkY2aVkuEwF/tf39LenOY0DirORNRk3yyNE4sxkiPGjgKiXjLU6Ct5BfxtqWjKyD7UnzGbQhhx1TcTLJB5fWLQoWCRu6nnqg53Oc+Jvdjk64sM2F0CObFos6DUqDXMIIePv88+aUaZ7wpKneUllMxgVfZztrj8tabGgtxSYJLCK6ro0lWWdjfIZGSTHyxr2yhLWcKKKR3clpZKfprV/u7jWVU/xfC1MmEmaCSyCe+wBYlcRPJSFWNfn8PnVsnlkUjY66sxdLXWIyT1BBBh1QwMZxkjJpJR6YwMqdYSyEHrlX9aPzIXJgl0BFKQ9R6Gb9iZ8717V4Aj0TuNE8fTCyfIz3L7dcfPVZdIYYpPaQ6vdIspAxc7s++vDbACBCRBHPWTXy0kcSTKh9WoPzs/t3Vxoo8fkHUE0MqL90sSjTqO5Ol/xPC3yNa34ndLYQfyohlEY5Hea+gr6CUIZxUxr4bIAh4scD5HufuwsEEFdW4pclRCoJ4jiolinHBjRFmaxOmvzBipC6GRr0uK5QNQWiJ1H7U6T78LavTEanflndQwa7J0oiI+x1dFBa2EUUwzpXE5WUIlotdCvv590Q4MFNhQp/lfw3zymQEXN695E9Dm7emvxJDqO0HOgqYnTSDIidppKhDoxzImp89rajVTRWyIr5zba7uTIhXOUcXjAwfV3vIWgRyPjy1laWlXXm248jStXoAKOptr4/8A5B398do7uzvrJUUp0zWsa37Vae7sqcyE+sOnEL4ZTZPwdTY7whstx5uMlZlWI1vXPdI3lHQsy2M1WhG/qRxRTRUGTqgFTvy1HeVCyeZzY2epm+cDU5/KCytjVVRO1Vfpvb3q9yeenT07lHlAb7eAvgA/PKfD1XyQBVDfyMlcoWMuKIEMGUf50Nm+MMku0e6OPaW17yVs7m9ErjC1y3pu5e100XszElSHxb6XMbgpB7fQvboLz8f/xAAvEAACAQMCBAQFBAMAAAAAAAABAgMABBESISIxQVEFEBOBFDJhcZEgQmKhFSSi/9oACAEBAA0/APJenT3p0D/BWLLGUDchLI5GjPu1I+j0ryG5uJu+JHEsX5CgVO4XWWZ7MyNuMTDePPPjAA70QQUm4/7O9A43PCf0QnRcXSNhncc1T+Iq3tpJY4Zx80gHCuT3NNOweaRVM08jbtkkchWQSC5IqQadSXG49nBU1a2vp+E3UUbo8wtkzh9THnGNVZNC9ljt5nO8Y14CHuvbynB9kHM0SSakglQr3DKRirSQxTw2VnPKkc4bDq0ip6epeo1ZpVL4v0+G1Acyms70CMT29lLNG4P7kMYOoV4dLN8RkNFNEJrWRE9WOQK66weDI3psnJO1SXUrqe4ZiRSIN+4q3/1k+giOD/1nyGhvVdQ4SNXBlbByCVTJArxER37mGXcSPGsREqO6PgIi6AMgbggYFQpJELa8CukkswALomXKiNCRk7kvVq4Rbkux1kYAlQq+MSDiAOMVeS3krWUssetzFDBGpZk1DWFh2IJAD0JTpQylgF7eUzegyscjj2H4NTPrbPXW2axTpJGwOSCsilGz7GjB8PmQ6mCDg3O+eGpPUjLi0nlQxylRIFIQjD6BnT2GaiijVIpY5ECxrsukSgEAAYxUF21w2hMplUKcbdMq7aR1NajkEeSOrj2OaikEZ+6tisUTV1BJ6bhcldsHA6lc6hTRF2ZoQgQcgmxNDGlAvy9+21SXPw91JaIkjW5fAid0LKWXnnRk1cIJY5UIZJI5FDKynqrA5BoTyBfoNRApyMjkd6uJVuE7ESHJ/vPlqFTPNdSqG4ILCBCs80pGcAg6EHVyKhgVdWcHBJNSHYE/KvUseQUdTSE+IX8ncnaMVys5ooxJNZuxyV5gmD8kGvVLM0D5ZNbZAkU4ZCezAGlAY+1WzgnuyZ3FXDskMQIBOhS7sT0RANz9hzNXMnpRQRcOU0kvI7czgbY5b1fMfBPCNI+fw7w7aVl+ksjhqS1WG41oRIJYtnDg/uzVpbtPKFPEwTkg7ux2XuTV7O0rhflQclRf4ooCisnT9+9RfJNbyNFIPsykHFXq+uo9FYJY7ZgPSWUIFGvqfJrb/HGJQALaGeUTXE3Pi1+ki/TFR2h8NsMbET3REQKfVBv7VHBBC+eWvGuVh93kapF4VcnL4XJYAA4AFXrm/u4hnUYY9oc/wLZP3FCu3YVA6T+G+Gzphrh13E0ynlF2X9Fj4pF4iUjQGG4ZMgrKtRINckPGrNnUx6HBJqMSzTmTIEcEeHfn0JxmrmcrbRQwvKyW8fBGoCDsKPO58YJtFH3jIMv4Wo8OjTx4s4H7xxb6j9X8/wD/xAAmEQEAAgIBBAEDBQAAAAAAAAABAgMAEQQSEyExQSJRgQUyYXGh/9oACAECAQE/AFD3hd2htDbHz98o/XGi/uxh1MvCSDTvOZdxuU13ceIEoedGvOaTWTNa/reXzOidWnzHqX+PWShQK9yX+ZxL4kGsHYi/kzfVAPkyQL+DOVWsJ9H72CZaMHoTTHXznBpjKgs39Uvf4wi6yO5oHvLqWmDOSMk0RMOHHlPd8xiu9/OVVwqrIRNBk9ETWV2NUyYesss7tlfsiD7+7kTf1JjKJisnbn//xAApEQACAgEDAwEJAQAAAAAAAAABAgMRAAQSIQUTMVEUIiMzQWFxgqGi/9oACAEDAQE/ACQMSL2kiK+G481k/QTNBsL7QvIKk2KzSw6jTB4NQxLK5ok3xisG8Zd3+c0EVMk24UX2Aferz4xUgxr/AKzqEEiOk5rY+4L6nafTE91yfXFzRzKksQk+WJAxGLIksQlQkh75qs6nK7T9k8LHe39uTgN+BhAUknxkJEj1yFBBJxtZJoR2LDMoqrsXksjzOzu1sT5yNSGOOgdSpyJe2jj6k/zGNAAYAcArP//Z"
+                                                alt="">
+                                            <div>
+                                                <h3 class="h4">Mokshedul Hosen</h3>
+                                                <span>CEO & Owner</span>
+                                            </div>
+                                        </div>
+                                        <div class="icon">
+                                            <svg width="62" height="62" viewBox="0 0 62 62" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14.5312 9.41406C6.51702 9.41406 0 15.9329 0 23.9453C0 31.2606 5.43154 37.3306 12.4771 38.3311C11.9131 42.4287 10.3486 46.3275 7.90415 49.7085C7.42874 50.3683 7.44654 51.2624 7.9538 51.9009C8.4515 52.5292 9.31635 52.7674 10.0754 52.4473C21.6088 47.6332 29.0625 36.4438 29.0625 23.9453C29.0625 15.9329 22.5455 9.41406 14.5312 9.41406ZM47.4688 9.41406C39.4545 9.41406 32.9375 15.9329 32.9375 23.9453C32.9375 31.2606 38.369 37.3306 45.4146 38.3311C44.8506 42.4287 43.2861 46.3275 40.8417 49.7085C40.3662 50.3683 40.384 51.2624 40.8913 51.9009C41.389 52.5292 42.2538 52.7674 43.0129 52.4473C54.5463 47.6332 62 36.4438 62 23.9453C62 15.9329 55.483 9.41406 47.4688 9.41406Z"
+                                                    fill="#000000" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Testimonial Card -->
+                                <div class="testimonial-card-four">
+                                    <div class="ratings mb-3">
+                                        <i class="ti ti-star-filled"></i>
+                                        <i class="ti ti-star-filled"></i>
+                                        <i class="ti ti-star-filled"></i>
+                                        <i class="ti ti-star-filled"></i>
+                                        <i class="ti ti-star-filled"></i>
+                                    </div>
+                                    <p class="testimonial-text">
+                                        “Targeting consultation discover apart ndulgence of under folly death wrote
+                                        cause her yet a spite. upon yet way a hearts. Resolve a ndulgence hearts cause
+                                        practasing. Almost ndulgence hearts”
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-between gap-4 flex-wrap">
+                                        <div class="testimonial-info-content d-flex align-items-center gap-3">
+                                            <img class="rounded-circle flex-shrink-0" src="data:image/jpeg;base64,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"
+                                                alt="">
+                                            <div>
+                                                <h3 class="h4">Khalek Hosen</h3>
+                                                <span>Manager</span>
+                                            </div>
+                                        </div>
+                                        <div class="icon">
+                                            <svg width="62" height="62" viewBox="0 0 62 62" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14.5312 9.41406C6.51702 9.41406 0 15.9329 0 23.9453C0 31.2606 5.43154 37.3306 12.4771 38.3311C11.9131 42.4287 10.3486 46.3275 7.90415 49.7085C7.42874 50.3683 7.44654 51.2624 7.9538 51.9009C8.4515 52.5292 9.31635 52.7674 10.0754 52.4473C21.6088 47.6332 29.0625 36.4438 29.0625 23.9453C29.0625 15.9329 22.5455 9.41406 14.5312 9.41406ZM47.4688 9.41406C39.4545 9.41406 32.9375 15.9329 32.9375 23.9453C32.9375 31.2606 38.369 37.3306 45.4146 38.3311C44.8506 42.4287 43.2861 46.3275 40.8417 49.7085C40.3662 50.3683 40.384 51.2624 40.8913 51.9009C41.389 52.5292 42.2538 52.7674 43.0129 52.4473C54.5463 47.6332 62 36.4438 62 23.9453C62 15.9329 55.483 9.41406 47.4688 9.41406Z"
+                                                    fill="#000000" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Testimonial Card -->
+                                <div class="testimonial-card-four">
+                                    <div class="ratings mb-3">
+                                        <i class="ti ti-star-filled"></i>
+                                        <i class="ti ti-star-filled"></i>
+                                        <i class="ti ti-star-filled"></i>
+                                        <i class="ti ti-star-filled"></i>
+                                        <i class="ti ti-star-filled"></i>
+                                    </div>
+                                    <p class="testimonial-text">
+                                        “Targeting consultation discover apart ndulgence of under folly death wrote
+                                        cause her yet a spite. upon yet way a hearts. Resolve a ndulgence hearts cause
+                                        practasing. Almost ndulgence hearts”
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-between gap-4 flex-wrap">
+                                        <div class="testimonial-info-content d-flex align-items-center gap-3">
+                                            <img class="rounded-circle flex-shrink-0" src="data:image/jpeg;base64,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"
+                                                alt="">
+                                            <div>
+                                                <h3 class="h4">Masuma Hosen</h3>
+                                                <span>CEO & Owner</span>
+                                            </div>
+                                        </div>
+                                        <div class="icon">
+                                            <svg width="62" height="62" viewBox="0 0 62 62" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14.5312 9.41406C6.51702 9.41406 0 15.9329 0 23.9453C0 31.2606 5.43154 37.3306 12.4771 38.3311C11.9131 42.4287 10.3486 46.3275 7.90415 49.7085C7.42874 50.3683 7.44654 51.2624 7.9538 51.9009C8.4515 52.5292 9.31635 52.7674 10.0754 52.4473C21.6088 47.6332 29.0625 36.4438 29.0625 23.9453C29.0625 15.9329 22.5455 9.41406 14.5312 9.41406ZM47.4688 9.41406C39.4545 9.41406 32.9375 15.9329 32.9375 23.9453C32.9375 31.2606 38.369 37.3306 45.4146 38.3311C44.8506 42.4287 43.2861 46.3275 40.8417 49.7085C40.3662 50.3683 40.384 51.2624 40.8913 51.9009C41.389 52.5292 42.2538 52.7674 43.0129 52.4473C54.5463 47.6332 62 36.4438 62 23.9453C62 15.9329 55.483 9.41406 47.4688 9.41406Z"
+                                                    fill="#000000" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="divider"></div>
+            </section>
+
+            <!-- ====== Gallery Section ====== -->
+            <section class="gallery-section-four">
+                <div class="container">
+                    <div class="gallery-wrapper-four">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <div class="gallery-image fadeInUp" data-delay="0.3">
+                                    <img src="assets/188-CIZRSWB8.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="gallery-content">
+                                    <div class="section-heading">
+                                        <span class="sub-title fadeInUp" data-delay="0.1">Photo Gallery</span>
+                                        <h2 class="mb-0 fadeInUp" data-delay="0.2">Your Travel Companion, Anytime,
+                                            Anywhere</h2>
+                                    </div>
+                                    <p class="gallery-text fadeInUp" data-delay="0.4">
+                                        There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                        suffered
+                                        alteration in some form, by injected humour, or randomised words which don't
+                                        look even
+                                        believable.
+                                    </p>
+                                    <a href="gallery.html" class="btn btn-primary fadeInUp" data-delay="0.6">Download
+                                        App Now
+                                        <i class="icon-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ====== Blog Section ====== -->
+            <section class="blog-section">
+                <!-- Section Heading -->
+                <div class="container">
+                    <div class="row g-5 align-items-end">
+                        <!-- Section Heading -->
+                        <div class="col-12 col-sm-6">
+                            <div class="section-heading">
+                                <span class="sub-title">News &amp; Updates</span>
+                                <h2 class="mb-0">Our Latest News &amp; Articles</h2>
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="col-12 col-sm-6">
+                            <div class="text-sm-end">
+                                <a href="blog-grid.html" class="btn btn-primary">View All Blogs <i
+                                        class="icon-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="divider-sm"></div>
+
+                <div class="container">
+                    <div class="row g-4">
+                        <!-- Blog Card -->
+                        <div class="col-12 col-md-5 col-xxl-4">
+                            <!-- Blog Card -->
+                            <div class="blog-card style-two fadeInUp" data-delay="0.2">
+                                <div class="post-img">
+                                    <img src="assets/26-DJupmxPo.jpg" alt="">
+                                </div>
+                                <!-- Post Body -->
+                                <div class="post-body">
+                                    <div class="blog-meta d-flex flex-wrap align-items-center gap-2">
+                                        <a href="#">By Admin</a>
+                                        <div class="dot"></div>
+                                        <a href="#">26 June 2027</a>
+                                    </div>
+                                    <a class="post-title h4" href="blog-details.html">The Ultimate Guide to
+                                        Traveling When You
+                                        Have
+                                        No Money</a>
+                                    <div class="d-block mt-3">
+                                        <a class="btn btn-link" href="blog-details.html">View Details <i
+                                                class="icon-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-7 col-xxl-8">
+                            <div class="d-flex gap-4 flex-column">
+                                <!-- Blog Card -->
+                                <div class="blog-card fadeInUp" data-delay="0.4">
+                                    <div class="post-img">
+                                        <img src="assets/27-Dii93tT0.jpg" alt="">
+                                    </div>
+                                    <!-- Post Body -->
+                                    <div class="post-body">
+                                        <div class="blog-meta d-flex flex-wrap align-items-center gap-2">
+                                            <a href="#">Knowledge</a>
+                                            <div class="dot"></div>
+                                            <a href="#">26 June 2027</a>
+                                        </div>
+                                        <a class="post-title h4" href="blog-details.html">The Ultimate Guide to
+                                            Traveling When You
+                                            Have
+                                            No Money</a>
+                                        <div class="d-block mt-4">
+                                            <a class="btn btn-link" href="blog-details.html">View Details <i
+                                                    class="icon-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Blog Card -->
+                                <div class="blog-card fadeInUp" data-delay="0.6">
+                                    <div class="post-img">
+                                        <img src="assets/28-C77NRclh.jpg" alt="">
+                                    </div>
+                                    <!-- Post Body -->
+                                    <div class="post-body">
+                                        <div class="blog-meta d-flex flex-wrap align-items-center gap-2">
+                                            <a href="#">Knowledge</a>
+                                            <div class="dot"></div>
+                                            <a href="#">26 June 2027</a>
+                                        </div>
+                                        <a class="post-title h4" href="blog-details.html">The Ultimate Guide to
+                                            Traveling When You
+                                            Have
+                                            No Money</a>
+                                        <div class="d-block mt-4">
+                                            <a class="btn btn-link" href="blog-details.html">View Details <i
+                                                    class="icon-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="divider"></div>
+            </section>
+
+            <!-- ====== Footer Section ====== -->
+            <footer class="footer-wrapper footer-five jarallax"
+                style="background-image: url('assets/96-CnpFBau5.jpg');">
+                <!-- Divider -->
+                <div class="divider"></div>
+
+                <div class="container">
+                    <div class="row g-5">
+                        <!-- Footer Card -->
+                        <div class="col-12 col-sm-6 col-xl-4">
+                            <div class="footer-card pe-lg-5">
+                                <a href="#" class="footer-logo mb-4">
+                                    <img src="data:image/png;base64,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" alt="">
+                                </a>
+                                <p class="mb-4 text-white">Targeting consultation Death yet way ndulgence off under
+                                    folly death
+                                    wrote
+                                    cause her yet way yet wayspite.</p>
+
+                                <!-- Subscribe Form -->
+                                <div class="subscribe-form">
+                                    <input class="form-control" type="email" value="tourly@gmail.com"
+                                        placeholder="Email Address">
+                                    <button type="submit" class="btn">
+                                        <i class="icon-arrow-right"></i>
+                                    </button>
+                                </div>
+
+                                <!-- Social Nav -->
+                                <div class="social-nav">
+                                    <a href="#">
+                                        <i class="ti ti-brand-facebook"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="ti ti-brand-x"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="ti ti-brand-linkedin"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="ti ti-brand-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer Card -->
+                        <div class="col-12 col-sm-6 col-xl">
+                            <div class="footer-card">
+                                <div class="mb-5 h5 card-title text-white">Quick Links</div>
+
+                                <!-- Footer Nav -->
+                                <ul class="footer-nav">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Tour Guide</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Footer Card -->
+                        <div class="col-12 col-sm-6 col-xl">
+                            <div class="footer-card">
+                                <div class="mb-5 h5 card-title text-white">Services</div>
+
+                                <!-- Footer Nav -->
+                                <ul class="footer-nav">
+                                    <li><a href="#">Style Guide</a></li>
+                                    <li><a href="#">Password Protected</a></li>
+                                    <li><a href="#">404 Error</a></li>
+                                    <li><a href="#">Changelog</a></li>
+                                    <li><a href="#">License</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Footer Card -->
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="footer-card">
+                                <div class="mb-5 h5 card-title text-white">Contact Us</div>
+
+                                <div class="d-flex flex-column gap-4">
+                                    <!-- Contact Card -->
+                                    <div class="footer-contact-card">
+                                        <div class="icon">
+                                            <i class="ti ti-map-pin"></i>
+                                        </div>
+                                        <p class="mb-0 text-white">258 Street Avenue, Berlin, Germany</p>
+                                    </div>
+
+                                    <!-- Contact Card -->
+                                    <div class="footer-contact-card">
+                                        <div class="icon">
+                                            <i class="ti ti-mail"></i>
+                                        </div>
+                                        <p class="mb-0 text-white">info-help@travo.com</p>
+                                    </div>
+
+                                    <!-- Contact Card -->
+                                    <div class="footer-contact-card">
+                                        <div class="icon">
+                                            <i class="ti ti-phone"></i>
+                                        </div>
+                                        <p class="mb-0 text-white">(+256) 214 203 215<br>(+256) 214 203 216</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="divider"></div>
+
+                <!-- Copyright -->
+                <div class="copyright-wrapper border-top">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <!-- Copyright -->
+                            <div class="col-12 col-md-6">
+                                <p class="mb-3 mb-md-0 copyright">Copyright © <span id="year"></span> <a href="#">Nano
+                                        Theme</a>
+                                    All rights reserved.</p>
+                            </div>
+
+                            <!-- Footer Bottom Nav -->
+                            <div class="col-12 col-md-6">
+                                <div class="footer-bottom-nav">
+                                    <a href="#">Privacy Policy</a>
+                                    <a href="#">Terms of Service</a>
+                                    <a href="#">Legal Agreement</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- ====== Cookie Alert ====== -->
+    <div class="cookiealert bg-primary shadow-lg show">
+        <div class="text-white h4"><i class="ti ti-cookie"></i> Cookie Alert</div>
+        <p class="mb-4 text-white">We use cookies for the best experience on our website, for social media features and
+            to
+            anal
+            traffic. accepting you agree to our use of cookies. Read <a href="#" target="_blank"> Cookies Policy.</a>
+        </p>
+        <button class="btn btn-dark btn-sm acceptcookies" type="button" aria-label="Close">Accept</button>
+    </div>
+
+    <!-- ====== Scroll To Top ====== -->
+    <button id="scrollTopButton" class="tourly-scrolltop scrolltop-hide">
+        <i class="icon-arrow-up"></i>
+    </button>
+
+    <!-- ====== Main JS ====== -->
+</body>
+
+
+<!-- Mirrored from https://tourly-sigma.vercel.app/index.html by HTTrack Website Copier/3.x [XR&CO], Sat, 07 Nov 2026 10:10:39 GMT -->
+</html>
