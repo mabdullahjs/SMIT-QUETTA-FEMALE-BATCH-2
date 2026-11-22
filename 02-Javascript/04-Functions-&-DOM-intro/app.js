@@ -122,3 +122,9 @@ console.log(greetings("abd"));
 
 
 // DOM manipulation
+const heading = document.querySelector(".heading")
+heading.innerHTML = "Welcome!"
+
+
+
+
