@@ -66,14 +66,59 @@
 
 //     } else {
 //         console.log("Number do shahbash...");
-        
+
 //     }
-    
-    
 // }
 
 // total(20 , 30)
 
 // local and global variable
-// return 
+
+// function sum(num1 , num2){
+//     console.log("sum of num1 and num2 is ===>" , num1 + num2);
+
+// }
+// sum(20 , 30)
+
+// let fullName = "mabdullah"; // global
+
+// function greetings(username) {
+//   let age = 23;
+//   console.log("hello " + username + " " + fullName, age);
+// }
+
+// greetings("abdullah");
+
+// console.log("console after function ==> " , fullName , age)
+
+// return
+
+// undefined
+// null 
+
+function greetings(username){
+    console.log("hello " + username);
+
+
+    return "hello " + username
+    
+}
+
+// let username = greetings("abd")
+// console.log(username);
+console.log(greetings("abd"));
+
+
+
+
+
+
+// let username = prompt("enter your name");
+// console.log(username);
+
+// console.log("prompt("enter your name")");
+
+
+
+
 // DOM manipulation
