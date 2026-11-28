@@ -96,17 +96,17 @@
 // undefined
 // null 
 
-function greetings(username){
-    console.log("hello " + username);
+// function greetings(username){
+//     console.log("hello " + username);
 
 
-    return "hello " + username
-    
-}
+//     return "hello " + username
+
+// }
 
 // let username = greetings("abd")
 // console.log(username);
-console.log(greetings("abd"));
+// console.log(greetings("abd"));
 
 
 
@@ -122,8 +122,80 @@ console.log(greetings("abd"));
 
 
 // DOM manipulation
-const heading = document.querySelector(".heading")
-heading.innerHTML = "Welcome!"
+// const heading = document.querySelector(".heading")
+// heading.innerHTML = "Welcome!"
+
+
+
+
+
+
+
+// functions , dom manipulation , array
+
+
+
+// function greetUser(){
+//     console.log("hello world");
+//     console.log("hello world");
+//     console.log("hello world");
+//     console.log("hello world");
+// }
+
+// greetUser()
+// greetUser()
+
+// argument send krna , parameter receive krna
+
+
+// function greetUser(username , age){
+//     console.log("username is " + username + " and age is " + age)
+
+//     return "username is " + username + " and age is " + age
+// }
+
+// greetUser("abdullah" , 23)
+// greetUser("usman" , 18)
+
+
+// return 
+
+// function ma return ka matlb jaha function call kiya ha waha pa return hui value ajayegi.
+
+
+// let username = greetUser("abdullah" , 23);
+// console.log(username);
+
+
+// console.log(greetUser("abdullah" , 23));
+
+
+
+// return function ka end ma ata ha or uska baad kuch bhi code nahi likhskta , return function ma aik baar ata ha.
+
+
+
+// DOM manipulation
+
+
+// const h1 = document.querySelector("#heading");
+// const p = document.querySelector("#para");
+// const input = document.querySelector("#input");
+
+
+
+// function changecontent() {
+//     h1.innerHTML = "changed through javascript"
+//     p.innerHTML = "para changed through javascript...."
+    
+//     h1.style.backgroundColor = "red"
+//     h1.style.color = "white"
+    
+//     p.style.fontSize = "2rem"
+//     console.log("input value" , input.value)
+
+// }
+
 
 
 
